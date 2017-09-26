@@ -19,7 +19,19 @@ namespace SoapProviderCalculator
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);
 
-        // TODO: Add your service operations here
+        [OperationContract]
+        double Add(double a, double b);
+        [OperationContract]
+        double Extract(double a, double b);
+
+        [OperationContract]
+        double multiply(double a, double b);
+
+        [OperationContract]
+        double divide(double a, double b);
+
+        [OperationContract]
+        double Calculate(double a, double b, out double extract, out double multiply, out double divide);
     }
 
 

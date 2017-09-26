@@ -29,5 +29,34 @@ namespace SoapProviderCalculator
             }
             return composite;
         }
+
+        public double Add(double a, double b)
+        {
+            return a + b;
+        }
+
+        public double Extract(double a, double b)
+        {
+            return a - b;
+        }
+
+        public double multiply(double a, double b)
+        {
+            return a * b;
+        }
+
+        public double divide(double a, double b)
+        {
+            return a / b;
+        }
+
+        public double Calculate(double a, double b, out double extract, out double multiply, out double divide)
+        {
+            extract = a - b;
+            multiply = a * b;
+            divide = a / b;
+
+            return a + b;
+        }
     }
 }
